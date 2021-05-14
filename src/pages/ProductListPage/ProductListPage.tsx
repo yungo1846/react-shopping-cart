@@ -66,7 +66,7 @@ const ProductListPage = () => {
   return (
     <Styled.ProductListPage>
       {productGridItemList}
-      {snackBarMessage && <SnackBar message={snackBarMessage} setMessage={setSnackBarMessage} />}
+      {snackBarMessage && <SnackBar key={Math.random()} message={snackBarMessage} setMessage={setSnackBarMessage} />}
     </Styled.ProductListPage>
   );
 };
